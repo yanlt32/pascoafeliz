@@ -11,22 +11,22 @@ import AllProducts from './pages/AllProducts';
 import './styles/App.css';
 
 const products = [
-  { id: 1, name: 'Ovo de Páscoa Tortuguita 120g', price: 20.00, image: '/assets/images/ovo-tortuguita-120g.jpg' },
-  { id: 2, name: 'Ovo de Páscoa Galak 155g', price: 20.00, image: '/assets/images/ovo-galak-155g.png' },
-  { id: 3, name: 'Ovo de Páscoa Diamante Negro 170g', price: 20.00, image: '/assets/images/ovo-diamante-negro-170g.png' },
-  { id: 4, name: 'Caixa de Bombons Nestlé Especialidades 251g', price: 20.00, image: '/assets/images/caixa-nestle-especialidades-251g.png' },
-  { id: 5, name: 'Caixa de Bombons Lacta 250g', price: 20.00, image: '/assets/images/caixa-lacta-250g.png' },
-  { id: 6, name: 'Caixa Ferrero Rocher 100g', price: 20.00, image: '/assets/images/caixa-ferrero-rocher-100g.png' },
-  { id: 7, name: 'Caixa Tortuguita Vibes Mix 134.5g', price: 20.00, image: '/assets/images/caixa-tortuguita-vibes-mix-134-5g.jpg' },
-  { id: 8, name: 'Ovo de Páscoa Talento Avelã 150g', price: 20.00, image: '/assets/images/ovo-talento-avelã-150g.png' },
-  { id: 9, name: 'Ovo de Páscoa Baton 130g', price: 20.00, image: '/assets/images/ovo-baton-130g.png' },
-  { id: 10, name: 'Ovo de Páscoa Laka 140g', price: 20.00, image: '/assets/images/ovo-laka-140g.png' },
-  { id: 11, name: 'Ovo de Páscoa Alpino 160g', price: 20.00, image: '/assets/images/ovo-alpino-160g.png' },
-  { id: 12, name: 'Ovo de Páscoa Kopenhagen Língua de Gato 170g', price: 20.00, image: '/assets/images/ovo-kopenhagen-lingua-de-gato-170g.jpg' },
-  { id: 13, name: 'Caixa de Bombons Garoto Sortidos 150g', price: 20.00, image: '/assets/images/caixa-garoto-sortidos-150g.png' },
-  { id: 14, name: 'Caixa de Bombons Kopenhagen Clássicos 200g', price: 20.00, image: '/assets/images/caixa-kopenhagen-classicos-200g.jpg' },
-  { id: 15, name: 'Caixa de Bombons Ouro Branco 120g', price: 20.00, image: '/assets/images/caixa-ouro-branco-120g.png' },
-  { id: 16, name: 'Caixa de Bombons Bis 126g', price: 20.00, image: '/assets/images/caixa-bis-126g.png' },
+    { id: 1, name: 'Ovo de Páscoa Tortuguita 120g', price: 20.00, image: '/assets/images/ovo-tortuguita-120g.jpg' },
+    { id: 2, name: 'Ovo de Páscoa Galak 155g', price: 20.00, image: '/assets/images/ovo-galak-155g.png' },
+    { id: 3, name: 'Ovo de Páscoa Diamante Negro 170g', price: 20.00, image: '/assets/images/ovo-diamante-negro-170g.png' },
+    { id: 4, name: 'Caixa de Bombons Nestlé Especialidades 251g', price: 20.00, image: '/assets/images/caixa-nestle-especialidades-251g.png' },
+    { id: 5, name: 'Caixa de Bombons Lacta 250g', price: 20.00, image: '/assets/images/caixa-lacta-250g.png' },
+    { id: 6, name: 'Caixa Ferrero Rocher 100g', price: 20.00, image: '/assets/images/caixa-ferrero-rocher-100g.png' },
+    { id: 7, name: 'Caixa Tortuguita Vibes Mix 134.5g', price: 20.00, image: '/assets/images/caixa-tortuguita-vibes-mix-134-5g.jpg' },
+    { id: 8, name: 'Ovo de Páscoa Talento Avelã 150g', price: 20.00, image: '/assets/images/ovo-talento-avelã-150g.png' },
+    { id: 9, name: 'Ovo de Páscoa Baton 130g', price: 20.00, image: '/assets/images/ovo-baton-130g.png' },
+    { id: 10, name: 'Ovo de Páscoa Laka 140g', price: 20.00, image: '/assets/images/ovo-laka-140g.png' },
+    { id: 11, name: 'Ovo de Páscoa Alpino 160g', price: 20.00, image: '/assets/images/ovo-alpino-160g.png' },
+    { id: 12, name: 'Ovo de Páscoa Kopenhagen Língua de Gato 170g', price: 20.00, image: '/assets/images/ovo-kopenhagen-lingua-de-gato-170g.jpg' },
+    { id: 13, name: 'Caixa de Bombons Garoto Sortidos 150g', price: 20.00, image: '/assets/images/caixa-garoto-sortidos-150g.png' },
+    { id: 14, name: 'Caixa de Bombons Kopenhagen Clássicos 200g', price: 20.00, image: '/assets/images/caixa-kopenhagen-classicos-200g.jpg' },
+    { id: 15, name: 'Caixa de Bombons Ouro Branco 120g', price: 20.00, image: '/assets/images/caixa-ouro-branco-120g.png' },
+    { id: 16, name: 'Caixa de Bombons Bis 126g', price: 20.00, image: '/assets/images/caixa-bis-126g.png' }
 ];
 
 function Home() {

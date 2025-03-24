@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/pascoafeliz/static/css/main.d37ba923.css",
+    "main.js": "/pascoafeliz/static/js/main.1e9e9efe.js",
+    "static/js/453.d586756d.chunk.js": "/pascoafeliz/static/js/453.d586756d.chunk.js",
+    "static/media/banner-pascoa-desktop.jpg": "/pascoafeliz/static/media/banner-pascoa-desktop.b09b0f2dfdddcded1539.jpg",
+    "static/media/banner-pascoa-mobile.jpg": "/pascoafeliz/static/media/banner-pascoa-mobile.a46d5575522e110376d8.jpg",
+    "index.html": "/pascoafeliz/index.html",
+    "main.d37ba923.css.map": "/pascoafeliz/static/css/main.d37ba923.css.map",
+    "main.1e9e9efe.js.map": "/pascoafeliz/static/js/main.1e9e9efe.js.map",
+    "453.d586756d.chunk.js.map": "/pascoafeliz/static/js/453.d586756d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d37ba923.css",
+    "static/js/main.1e9e9efe.js"
+  ]
+}

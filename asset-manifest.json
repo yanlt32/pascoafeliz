@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pascoafeliz/static/css/main.8ba41521.css",
-    "main.js": "/pascoafeliz/static/js/main.cabf1d5c.js",
+    "main.css": "/pascoafeliz/static/css/main.df6f1741.css",
+    "main.js": "/pascoafeliz/static/js/main.f8473ab7.js",
     "static/js/453.d586756d.chunk.js": "/pascoafeliz/static/js/453.d586756d.chunk.js",
     "static/media/caixa-ferrero-rocher-100g.png": "/pascoafeliz/static/media/caixa-ferrero-rocher-100g.96563ec52e99f2127f00.png",
     "static/media/caixa-kopenhagen-classicos-200g.jpg": "/pascoafeliz/static/media/caixa-kopenhagen-classicos-200g.6a9271def0d8d3a3a2a4.jpg",
@@ -15,19 +15,19 @@
     "static/media/caixa-garoto-sortidos-150g.png": "/pascoafeliz/static/media/caixa-garoto-sortidos-150g.88e1ed23f5acf4a33406.png",
     "static/media/ovo-alpino-160g.png": "/pascoafeliz/static/media/ovo-alpino-160g.aad13896ab0b4e1dcce5.png",
     "static/media/ovo-galak-155g.png": "/pascoafeliz/static/media/ovo-galak-155g.d6a4c620190ee5d7c390.png",
-    "static/media/banner-pascoa-desktop.jpg": "/pascoafeliz/static/media/banner-pascoa-desktop.b09b0f2dfdddcded1539.jpg",
     "static/media/ovo-kopenhagen-lingua-de-gato-170g.jpg": "/pascoafeliz/static/media/ovo-kopenhagen-lingua-de-gato-170g.0dc6e1c60675f9dbce5f.jpg",
+    "static/media/banner-pascoa-mobile.jpg": "/pascoafeliz/static/media/banner-pascoa-mobile.9ed84eadfc5631e876ee.jpg",
     "static/media/ovo-baton-130g.png": "/pascoafeliz/static/media/ovo-baton-130g.9ec274011204382bc513.png",
+    "static/media/banner-pascoa-desktop.jpg": "/pascoafeliz/static/media/banner-pascoa-desktop.4fadc4b805691a9d0676.jpg",
     "static/media/ovo-tortuguita-120g.jpg": "/pascoafeliz/static/media/ovo-tortuguita-120g.8b683ddbcece1e8fd374.jpg",
     "static/media/ovo-laka-140g.png": "/pascoafeliz/static/media/ovo-laka-140g.0b46665b17cc4d84cfdd.png",
-    "static/media/banner-pascoa-mobile.jpg": "/pascoafeliz/static/media/banner-pascoa-mobile.a46d5575522e110376d8.jpg",
     "index.html": "/pascoafeliz/index.html",
-    "main.8ba41521.css.map": "/pascoafeliz/static/css/main.8ba41521.css.map",
-    "main.cabf1d5c.js.map": "/pascoafeliz/static/js/main.cabf1d5c.js.map",
+    "main.df6f1741.css.map": "/pascoafeliz/static/css/main.df6f1741.css.map",
+    "main.f8473ab7.js.map": "/pascoafeliz/static/js/main.f8473ab7.js.map",
     "453.d586756d.chunk.js.map": "/pascoafeliz/static/js/453.d586756d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ba41521.css",
-    "static/js/main.cabf1d5c.js"
+    "static/css/main.df6f1741.css",
+    "static/js/main.f8473ab7.js"
   ]
 }

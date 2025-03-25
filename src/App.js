@@ -1,7 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import { CartProvider, CartContext } from './context/CartContext';
 import ProductCard from './components/ProductCard';
 import CartModal from './components/CartModal';
@@ -9,7 +10,7 @@ import CheckoutModal from './components/CheckoutModal';
 import AllProducts from './pages/AllProducts';
 import './styles/App.css';
 
-// Importe as imagens corretamente
+// Importe as imagens
 import ovoTortuguita from './assets/images/ovo-tortuguita-120g.jpg';
 import ovoGalak from './assets/images/ovo-galak-155g.png';
 import ovoDiamanteNegro from './assets/images/ovo-diamante-negro-170g.png';
@@ -28,22 +29,22 @@ import caixaOuroBranco from './assets/images/caixa-ouro-branco-120g.png';
 import caixaBis from './assets/images/caixa-bis-126g.png';
 
 const products = [
-  { id: 1, name: 'Ovo de Páscoa Tortuguita 120g', price: 20.00, image: ovoTortuguita },
-  { id: 2, name: 'Ovo de Páscoa Galak 155g', price: 20.00, image: ovoGalak },
-  { id: 3, name: 'Ovo de Páscoa Diamante Negro 170g', price: 20.00, image: ovoDiamanteNegro },
-  { id: 4, name: 'Caixa de Bombons Nestlé Especialidades 251g', price: 20.00, image: caixaNestleEspecialidades },
-  { id: 5, name: 'Caixa de Bombons Lacta 250g', price: 20.00, image: caixaLacta },
-  { id: 6, name: 'Caixa Ferrero Rocher 100g', price: 20.00, image: caixaFerreroRocher },
-  { id: 7, name: 'Caixa Tortuguita Vibes Mix 134.5g', price: 20.00, image: caixaTortuguitaVibes },
-  { id: 8, name: 'Ovo de Páscoa Talento Avelã 150g', price: 20.00, image: ovoTalentoAvela },
-  { id: 9, name: 'Ovo de Páscoa Baton 130g', price: 20.00, image: ovoBaton },
-  { id: 10, name: 'Ovo de Páscoa Laka 140g', price: 20.00, image: ovoLaka },
+  { id: 1, name: 'Ovo de Páscoa Tortuguita 120g', price: 29.99, image: ovoTortuguita },
+  { id: 2, name: 'Ovo de Páscoa Galak 155g', price: 59.99, image: ovoGalak },
+  { id: 3, name: 'Ovo de Páscoa Diamante Negro 170g', price: 59.99, image: ovoDiamanteNegro },
+  { id: 4, name: 'Caixa de Bombons Nestlé Especialidades 251g', price: 9.00, image: caixaNestleEspecialidades },
+  { id: 5, name: 'Caixa de Bombons Lacta 250g', price: 9.00, image: caixaLacta },
+  { id: 6, name: 'Caixa Ferrero Rocher 100g', price: 12.00, image: caixaFerreroRocher },
+  { id: 7, name: 'Caixa Tortuguita Vibes Mix 134.5g', price: 12.00, image: caixaTortuguitaVibes },
+  { id: 8, name: 'Ovo de Páscoa Talento Avelã 150g', price: 60.00, image: ovoTalentoAvela },
+  { id: 9, name: 'Ovo de Páscoa Baton 130g', price: 49.99, image: ovoBaton },
+  { id: 10, name: 'Ovo de Páscoa Laka 140g', price: 59.99, image: ovoLaka },
   { id: 11, name: 'Ovo de Páscoa Alpino 160g', price: 20.00, image: ovoAlpino },
-  { id: 12, name: 'Ovo de Páscoa Kopenhagen Língua de Gato 170g', price: 20.00, image: ovoKopenhagenLinguaDeGato },
-  { id: 13, name: 'Caixa de Bombons Garoto Sortidos 150g', price: 20.00, image: caixaGarotoSortidos },
-  { id: 14, name: 'Caixa de Bombons Kopenhagen Clássicos 200g', price: 20.00, image: caixaKopenhagenClassicos },
-  { id: 15, name: 'Caixa de Bombons Ouro Branco 120g', price: 20.00, image: caixaOuroBranco },
-  { id: 16, name: 'Caixa de Bombons Bis 126g', price: 20.00, image: caixaBis }
+  { id: 12, name: 'Ovo de Páscoa Kopenhagen Língua de Gato 170g', price: 30.00, image: ovoKopenhagenLinguaDeGato },
+  { id: 13, name: 'Caixa de Bombons Garoto Sortidos 150g', price: 9.00, image: caixaGarotoSortidos },
+  { id: 14, name: 'Caixa de Bombons Kopenhagen Clássicos 200g', price: 30.00, image: caixaKopenhagenClassicos },
+  { id: 15, name: 'Caixa de Bombons Ouro Branco 120g', price: 10.00, image: caixaOuroBranco },
+  { id: 16, name: 'Caixa de Bombons Bis 126g', price: 6.00, image: caixaBis },
 ];
 
 function Home() {
@@ -63,46 +64,39 @@ function Home() {
 
   return (
     <div className="app">
-      {/* Header */}
       <header className="header">
         <div className="container">
+          <div className="header-left">
+
+          </div>
           <h1 className="logo">Páscoa Feliz</h1>
-          <button onClick={() => setIsCartOpen(true)} className="cart-button">
-            Carrinho ({cart.length})
-          </button>
+          <div className="header-right">
+            <Link to="/all-products" className="icon-button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a2c2a" strokeWidth="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </Link>
+            <button className="icon-button cart-button" onClick={() => setIsCartOpen(true)}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a2c2a" strokeWidth="2">
+                <circle cx="9" cy="21" r="1" />
+                <circle cx="20" cy="21" r="1" />
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+              </svg>
+              {cart.length > 0 && <span className="cart-count">{cart.length}</span>}
+            </button>
+          </div>
         </div>
       </header>
 
-      {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
-          <button onClick={() => window.scrollTo({ top: 600, behavior: 'smooth' })}>
-            Veja Nossos Produtos
-          </button>
         </div>
       </section>
 
-      {/* Featured Products Section */}
       <section className="products-section">
         <h2>Produtos em Destaque</h2>
-        <Carousel 
-          showThumbs={false} 
-          autoPlay 
-          infiniteLoop 
-          showStatus={false} 
-          className="product-carousel"
-        >
-          {products.slice(0, 3).map(product => (
-            <div key={product.id} className="carousel-item">
-              <img src={product.image} alt={product.name} />
-              <div className="carousel-legend">
-                <p>{product.name}</p>
-                <p>R$ {product.price.toFixed(2)}</p>
-              </div>
-            </div>
-          ))}
-        </Carousel>
-        <div className="product-grid">
+        <div className="home-product-grid">
           {products.slice(0, 3).map(product => (
             <ProductCard key={product.id} product={product} addToCart={addToCart} />
           ))}
@@ -112,7 +106,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
       <section className="why-choose-section">
         <h2>Por que Escolher Nossos Chocolates?</h2>
         <div className="why-choose-grid">
@@ -131,7 +124,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
       <section className="testimonials-section">
         <h2>O que Nossos Clientes Dizem</h2>
         <div className="testimonials-grid">
@@ -150,7 +142,6 @@ function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="cta-section">
         <h2>Faça Sua Páscoa Mais Doce!</h2>
         <p>Compre agora e aproveite nossas promoções exclusivas.</p>
@@ -159,12 +150,10 @@ function Home() {
         </button>
       </section>
 
-      {/* Footer */}
       <footer className="footer">
-        <p>&copy; 2025 Páscoa Feliz. Todos os direitos reservados.</p>
+        <p>© 2025 Páscoa Feliz. Todos os direitos reservados.</p>
       </footer>
 
-      {/* Modal de Carrinho */}
       {isCartOpen && (
         <CartModal 
           cart={cart}
@@ -174,7 +163,6 @@ function Home() {
         />
       )}
 
-      {/* Modal de Checkout */}
       {isCheckoutOpen && (
         <CheckoutModal onClose={() => setIsCheckoutOpen(false)} />
       )}
@@ -184,11 +172,16 @@ function Home() {
 
 export default function App() {
   return (
-    <Router>
+    <Router
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }}
+    >
       <CartProvider>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/all-products" element={<AllProducts products={products} addToCart={() => {}} />} />
+          <Route path="/all-products" element={<AllProducts products={products} />} />
         </Routes>
       </CartProvider>
     </Router>

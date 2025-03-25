@@ -4,11 +4,9 @@ import { CartContext } from '../context/CartContext';
 import ProductCard from '../components/ProductCard';
 import CartModal from '../components/CartModal';
 import CheckoutModal from '../components/CheckoutModal';
-import PromocaoCoelho from '../components/PromocaoCoelho';
-import '../styles/AllProducts.css';
-import '../styles/App.css';
+import '../styles/AllProducts.css'; // Importação do CSS do AllProducts
 
-const AllProducts = ({ products }) => {
+function AllProducts({ products }) {
   const { cart, setCart } = useContext(CartContext);
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
@@ -24,57 +22,46 @@ const AllProducts = ({ products }) => {
   };
 
   return (
-    <div className="app">
-      {/* Header */}
+    <div className="all-products-page">
       <header className="header">
         <div className="container">
-          <Link to="/" className="logo-link">
-            <h1 className="logo">Páscoa Feliz</h1>
-          </Link>
-          <button onClick={() => setIsCartOpen(true)} className="cart-button">
-            Carrinho ({cart.length})
-          </button>
+          <h1 className="logo">Páscoa Feliz</h1>
+          <div className="header-buttons">
+            <Link to="/" className="back-button">Voltar</Link>
+            <button className="cart-button" onClick={() => setIsCartOpen(true)}>
+              Carrinho ({cart.length})
+            </button>
+          </div>
         </div>
       </header>
 
-      {/* Botão de Voltar */}
-      <div className="container">
-        <Link to="/" className="back-button"> Voltar para a Página Inicial</Link>
-      </div>
-
-      {/* Conteúdo da página */}
-      <div className="all-products">
+      <section className="all-products-section">
         <h2>Todos os Produtos</h2>
         <div className="product-grid">
           {products.map(product => (
             <ProductCard key={product.id} product={product} addToCart={addToCart} />
           ))}
         </div>
-      </div>
+      </section>
 
-      {/* Footer */}
       <footer className="footer">
-        <p>2025 Páscoa Feliz - Todos os direitos reservados</p>
+        <p>© 2025 Páscoa Feliz. Todos os direitos reservados.</p>
       </footer>
 
-      {/* Coelho da Promoção */}
-      <PromocaoCoelho />
-
-      {/* Modals */}
       {isCartOpen && (
-        <CartModal
-          onClose={() => setIsCartOpen(false)}
-          onCheckout={() => {
-            setIsCartOpen(false);
-            setIsCheckoutOpen(true);
-          }}
-          removeFromCart={removeFromCart}
+        <CartModal 
           cart={cart}
+          removeFromCart={removeFromCart}
+          onClose={() => setIsCartOpen(false)}
+          onCheckout={() => setIsCheckoutOpen(true)}
         />
       )}
-      {isCheckoutOpen && <CheckoutModal onClose={() => setIsCheckoutOpen(false)} cart={cart} />}
+
+      {isCheckoutOpen && (
+        <CheckoutModal onClose={() => setIsCheckoutOpen(false)} />
+      )}
     </div>
   );
-};
+}
 
 export default AllProducts;

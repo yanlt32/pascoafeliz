@@ -1,34 +1,50 @@
 ﻿.product-card {
-  background-color: white;
-  border-radius: 12px;
-  padding: 1.5rem;
-  text-align: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
 
 .product-card:hover {
   transform: translateY(-5px);
 }
 
-.product-card img {
+/* Contêiner para a imagem */
+.product-card .image-container {
+  width: 200px; /* Define uma largura fixa para o contêiner da imagem */
+  height: 300px; /* Define uma altura fixa para o contêiner da imagem */
+  margin: 0 auto; /* Centraliza o contêiner */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imagem dentro do contêiner */
+.product-card .image-container img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain; /* Mantém a proporção da imagem */
   border-radius: 8px;
-  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.product-card .image-container img:hover {
+  transform: scale(1.05);
 }
 
 .product-card h3 {
   font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
   color: #4a2c2a;
 }
 
 .product-card p {
   font-size: 1rem;
-  margin-bottom: 1rem;
-  color: #666;
+  margin: 0.5rem 0;
+  color: #4a2c2a;
+  font-weight: 500;
 }
 
 .product-card button {
@@ -38,9 +54,51 @@
   padding: 0.5rem 1rem;
   border-radius: 20px;
   cursor: pointer;
+  font-size: 1rem;
   transition: background-color 0.3s;
 }
 
 .product-card button:hover {
   background-color: #e6b98a;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .product-card .image-container {
+    width: 150px;
+    height: 225px;
+  }
+
+  .product-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .product-card p {
+    font-size: 0.9rem;
+  }
+
+  .product-card button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card .image-container {
+    width: 120px;
+    height: 180px;
+  }
+
+  .product-card h3 {
+    font-size: 1rem;
+  }
+
+  .product-card p {
+    font-size: 0.8rem;
+  }
+
+  .product-card button {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
 }

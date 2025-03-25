@@ -57,7 +57,7 @@
 
 /* Hero Section */
 .hero {
-  background: url('/assets/images/banner-pascoa-desktop.jpg') center/cover no-repeat;
+  background: url('../assets/images/banner-pascoa-desktop.jpg') center/cover no-repeat;
   height: 600px;
   display: flex;
   align-items: center;
@@ -318,7 +318,7 @@
 /* Responsividade */
 @media (max-width: 768px) {
   .hero {
-    background: url('../assets/images/banner-pascoa-mobile.jpg') center/cover no-repeat;
+    background: url('../../src/assets/images/banner-pascoa-desktop.jpg') center/cover no-repeat;
     height: 400px;
   }
 
@@ -350,7 +350,7 @@
 
 @media (max-width: 480px) {
   .hero {
-    background: url('/assets/images/banner-pascoa-mobile.jpg') center/cover no-repeat;
+    background: url('../assets/images/banner-pascoa-mobile.jpg') center/cover no-repeat;
     height: 300px;
   }
 

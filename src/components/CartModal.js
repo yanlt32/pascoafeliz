@@ -7,7 +7,10 @@ const CartModal = ({ onClose, onCheckout, removeFromCart, cart }) => {
       <div className="modal">
         <h2>Seu Carrinho</h2>
         {cart.length === 0 ? (
-          <p>Seu carrinho está vazio.</p>
+          <div>
+            <p>Seu carrinho está vazio.</p>
+            <button onClick={onClose} className="back-button">Voltar</button>
+          </div>
         ) : (
           <div>
             <ul className="cart-items">

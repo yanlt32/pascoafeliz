@@ -80,7 +80,6 @@ const CheckoutModal = ({ onClose }) => {
             Forma de Pagamento:
             <select name="paymentMethod" value={formData.paymentMethod} onChange={handleChange}>
               <option value="pix">PIX</option>
-              <option value="card">Cartão de Crédito</option>
             </select>
           </label>
           <button type="submit">Pagar Agora</button>

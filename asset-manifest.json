@@ -1,17 +1,33 @@
 {
   "files": {
-    "main.css": "/pascoafeliz/static/css/main.d37ba923.css",
-    "main.js": "/pascoafeliz/static/js/main.1e9e9efe.js",
+    "main.css": "/pascoafeliz/static/css/main.8ba41521.css",
+    "main.js": "/pascoafeliz/static/js/main.cabf1d5c.js",
     "static/js/453.d586756d.chunk.js": "/pascoafeliz/static/js/453.d586756d.chunk.js",
+    "static/media/caixa-ferrero-rocher-100g.png": "/pascoafeliz/static/media/caixa-ferrero-rocher-100g.96563ec52e99f2127f00.png",
+    "static/media/caixa-kopenhagen-classicos-200g.jpg": "/pascoafeliz/static/media/caixa-kopenhagen-classicos-200g.6a9271def0d8d3a3a2a4.jpg",
+    "static/media/caixa-ouro-branco-120g.png": "/pascoafeliz/static/media/caixa-ouro-branco-120g.1a4c10824418eeac47eb.png",
+    "static/media/caixa-lacta-250g.png": "/pascoafeliz/static/media/caixa-lacta-250g.e2d0d36a7b494f7fee56.png",
+    "static/media/caixa-nestle-especialidades-251g.png": "/pascoafeliz/static/media/caixa-nestle-especialidades-251g.8885af5c4922c65a5797.png",
+    "static/media/ovo-talento-avelã-150g.png": "/pascoafeliz/static/media/ovo-talento-avelã-150g.8658fe9b979eb5bf517f.png",
+    "static/media/caixa-tortuguita-vibes-mix-134-5g.jpg": "/pascoafeliz/static/media/caixa-tortuguita-vibes-mix-134-5g.fd7757f974ffa2beec5c.jpg",
+    "static/media/caixa-bis-126g.png": "/pascoafeliz/static/media/caixa-bis-126g.3da870ec245772137476.png",
+    "static/media/ovo-diamante-negro-170g.png": "/pascoafeliz/static/media/ovo-diamante-negro-170g.14f28aab153681aa8082.png",
+    "static/media/caixa-garoto-sortidos-150g.png": "/pascoafeliz/static/media/caixa-garoto-sortidos-150g.88e1ed23f5acf4a33406.png",
+    "static/media/ovo-alpino-160g.png": "/pascoafeliz/static/media/ovo-alpino-160g.aad13896ab0b4e1dcce5.png",
+    "static/media/ovo-galak-155g.png": "/pascoafeliz/static/media/ovo-galak-155g.d6a4c620190ee5d7c390.png",
     "static/media/banner-pascoa-desktop.jpg": "/pascoafeliz/static/media/banner-pascoa-desktop.b09b0f2dfdddcded1539.jpg",
+    "static/media/ovo-kopenhagen-lingua-de-gato-170g.jpg": "/pascoafeliz/static/media/ovo-kopenhagen-lingua-de-gato-170g.0dc6e1c60675f9dbce5f.jpg",
+    "static/media/ovo-baton-130g.png": "/pascoafeliz/static/media/ovo-baton-130g.9ec274011204382bc513.png",
+    "static/media/ovo-tortuguita-120g.jpg": "/pascoafeliz/static/media/ovo-tortuguita-120g.8b683ddbcece1e8fd374.jpg",
+    "static/media/ovo-laka-140g.png": "/pascoafeliz/static/media/ovo-laka-140g.0b46665b17cc4d84cfdd.png",
     "static/media/banner-pascoa-mobile.jpg": "/pascoafeliz/static/media/banner-pascoa-mobile.a46d5575522e110376d8.jpg",
     "index.html": "/pascoafeliz/index.html",
-    "main.d37ba923.css.map": "/pascoafeliz/static/css/main.d37ba923.css.map",
-    "main.1e9e9efe.js.map": "/pascoafeliz/static/js/main.1e9e9efe.js.map",
+    "main.8ba41521.css.map": "/pascoafeliz/static/css/main.8ba41521.css.map",
+    "main.cabf1d5c.js.map": "/pascoafeliz/static/js/main.cabf1d5c.js.map",
     "453.d586756d.chunk.js.map": "/pascoafeliz/static/js/453.d586756d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d37ba923.css",
-    "static/js/main.1e9e9efe.js"
+    "static/css/main.8ba41521.css",
+    "static/js/main.cabf1d5c.js"
   ]
 }

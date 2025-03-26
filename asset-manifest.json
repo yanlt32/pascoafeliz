@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pascoafeliz/static/css/main.df6f1741.css",
-    "main.js": "/pascoafeliz/static/js/main.f8473ab7.js",
+    "main.css": "/pascoafeliz/static/css/main.c5da1a73.css",
+    "main.js": "/pascoafeliz/static/js/main.0e600509.js",
     "static/js/453.d586756d.chunk.js": "/pascoafeliz/static/js/453.d586756d.chunk.js",
     "static/media/caixa-ferrero-rocher-100g.png": "/pascoafeliz/static/media/caixa-ferrero-rocher-100g.96563ec52e99f2127f00.png",
     "static/media/caixa-kopenhagen-classicos-200g.jpg": "/pascoafeliz/static/media/caixa-kopenhagen-classicos-200g.6a9271def0d8d3a3a2a4.jpg",
@@ -22,12 +22,12 @@
     "static/media/ovo-tortuguita-120g.jpg": "/pascoafeliz/static/media/ovo-tortuguita-120g.8b683ddbcece1e8fd374.jpg",
     "static/media/ovo-laka-140g.png": "/pascoafeliz/static/media/ovo-laka-140g.0b46665b17cc4d84cfdd.png",
     "index.html": "/pascoafeliz/index.html",
-    "main.df6f1741.css.map": "/pascoafeliz/static/css/main.df6f1741.css.map",
-    "main.f8473ab7.js.map": "/pascoafeliz/static/js/main.f8473ab7.js.map",
+    "main.c5da1a73.css.map": "/pascoafeliz/static/css/main.c5da1a73.css.map",
+    "main.0e600509.js.map": "/pascoafeliz/static/js/main.0e600509.js.map",
     "453.d586756d.chunk.js.map": "/pascoafeliz/static/js/453.d586756d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df6f1741.css",
-    "static/js/main.f8473ab7.js"
+    "static/css/main.c5da1a73.css",
+    "static/js/main.0e600509.js"
   ]
 }

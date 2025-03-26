@@ -67,7 +67,6 @@ function Home() {
       <header className="header">
         <div className="container">
           <div className="header-left">
-
           </div>
           <h1 className="logo">Páscoa Feliz</h1>
           <div className="header-right">
@@ -107,19 +106,19 @@ function Home() {
       </section>
 
       <section className="why-choose-section">
-        <h2>Por que Escolher Nossos Chocolates?</h2>
+        <h2>Por que Comprar Conosco?</h2>
         <div className="why-choose-grid">
           <div className="why-choose-item">
-            <h3>Ingredientes Premium</h3>
-            <p>Usamos apenas cacau de origem sustentável e ingredientes naturais.</p>
+            <h3>Preços Imbatíveis</h3>
+            <p>Oferecemos os melhores preços em ovos de Páscoa e bombons das marcas mais amadas.</p>
           </div>
           <div className="why-choose-item">
-            <h3>Feito com Carinho</h3>
-            <p>Cada ovo e bombom é produzido com amor e cuidado artesanal.</p>
+            <h3>Entrega Grátis</h3>
+            <p>Entregamos seus chocolates em qualquer lugar, sem custo adicional.</p>
           </div>
           <div className="why-choose-item">
-            <h3>Perfeito para Presentear</h3>
-            <p>Embalagens elegantes para tornar sua Páscoa ainda mais especial.</p>
+            <h3>Variedade para Todos</h3>
+            <p>Uma ampla seleção de ovos e bombons para tornar sua Páscoa inesquecível.</p>
           </div>
         </div>
       </section>

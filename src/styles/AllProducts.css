@@ -8,12 +8,13 @@
 
 /* Header */
 .header {
-  background-color: #4a2c2a;
-  padding: 1rem 0;
+  background-color: #f5e9e2;
+  padding: 1rem 0; /* Mantém o padding vertical */
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .header .container {
@@ -22,48 +23,57 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 5 0.5rem; /* Reduz o padding lateral para 0.5rem (ou pode remover completamente com padding: 0) */
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #4a2c2a;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 1px;
 }
 
-.header-buttons {
+.header-left,
+.header-right {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
-.back-button {
-  background-color: #ccc;
-  color: #333;
+.icon-button {
+  background: none;
   border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: background-color 0.3s;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
 }
 
-.back-button:hover {
-  background-color: #bbb;
+.icon-button:hover {
+  transform: scale(1.1);
 }
 
 .cart-button {
-  background-color: #d4a373;
-  color: #4a2c2a;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: background-color 0.3s;
+  position: relative;
 }
 
-.cart-button:hover {
-  background-color: #e6b98a;
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #e63946;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* All Products Section */
@@ -110,6 +120,14 @@
   .all-products-section h2 {
     font-size: 2rem;
   }
+
+  .header .container {
+    padding: 0 0.5rem; /* Mantém o padding reduzido */
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -127,21 +145,23 @@
   }
 
   .header .container {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
-  }
-
-  .header-buttons {
-    width: 100%;
-    justify-content: space-between;
+    padding: 0 0.5rem; /* Mantém o padding reduzido */
   }
 
   .logo {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
-  .back-button, .cart-button {
-    font-size: 0.9rem;
-    padding: 0.4rem 0.8rem;
+  .icon-button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .cart-count {
+    width: 16px;
+    height: 16px;
+    font-size: 0.65rem;
   }
 }

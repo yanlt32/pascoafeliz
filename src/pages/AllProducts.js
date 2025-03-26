@@ -4,7 +4,7 @@ import { CartContext } from '../context/CartContext';
 import ProductCard from '../components/ProductCard';
 import CartModal from '../components/CartModal';
 import CheckoutModal from '../components/CheckoutModal';
-import '../styles/AllProducts.css'; // Importação do CSS do AllProducts
+import '../styles/AllProducts.css';
 
 function AllProducts({ products }) {
   const { cart, setCart } = useContext(CartContext);
@@ -25,11 +25,27 @@ function AllProducts({ products }) {
     <div className="all-products-page">
       <header className="header">
         <div className="container">
+          <div className="header-left">
+            <Link to="/" className="icon-button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a2c2a" strokeWidth="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </Link>
+          </div>
           <h1 className="logo">Páscoa Feliz</h1>
-          <div className="header-buttons">
-            <Link to="/" className="back-button">Voltar</Link>
-            <button className="cart-button" onClick={() => setIsCartOpen(true)}>
-              Carrinho ({cart.length})
+          <div className="header-right">
+            <button
+              className="icon-button cart-button"
+              onClick={() => setIsCartOpen(true)}
+              aria-label={`Abrir carrinho com ${cart.length} itens`}
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4a2c2a" strokeWidth="2">
+                <circle cx="9" cy="21" r="1" />
+                <circle cx="20" cy="21" r="1" />
+                <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+              </svg>
+              {cart.length > 0 && <span className="cart-count">{cart.length}</span>}
             </button>
           </div>
         </div>
